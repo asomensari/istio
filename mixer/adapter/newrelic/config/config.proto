@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package adapter.newrelic.config;
+
+//import "gogoproto/gogo.proto";
+
+// config package
+option go_package="config";
+
+// Have 3 properties, file, newrelic_id and insights_key
+message Params {
+
+    // New Relic Account ID
+    string newrelic_id = 1;
+
+    // New Relic Insights Insert API Key
+    string insights_key = 2;
+
+}
